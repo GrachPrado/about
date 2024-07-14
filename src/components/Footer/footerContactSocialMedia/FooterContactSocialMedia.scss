@@ -1,0 +1,38 @@
+// DRY__Mobile-first
+@import "../../../scss/mixins.scss";
+@import "../../../scss/variables.scss";
+
+.footer__contact-socialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0;
+  width: 11.1rem;
+
+  p {
+    margin: 0;
+    @include font-styles(
+      #fff,
+      $font-family-montserrat,
+      14px,
+      normal,
+      700,
+      normal,
+      1px,
+      capitalize
+    );
+  }
+
+  .footer__contact-icon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+
+    a {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

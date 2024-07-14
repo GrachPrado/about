@@ -1,0 +1,183 @@
+@import "../../../../scss/variables.scss";
+@import "../../../../scss/mixins.scss";
+
+main {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  .home {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+    max-width: 74.25rem;
+    margin: auto;
+    background: url("../HomeTitle/HomeImage/union.png") no-repeat center / auto;
+    background-position: center center;
+
+    @media only screen and (min-width: 768px) {
+      background-position: -100px -320px;
+      height: 35rem;
+    }
+    @media only screen and (min-width: 1024px) {
+      background-position: -55px -130px;
+      height: 37.5rem;
+    }
+    @media only screen and (min-width: 1440px) {
+      background-position: 0 -130px;
+      height: auto;
+    }
+
+    .home__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media only screen and (min-width: 768px) {
+        align-items: flex-start;
+      }
+      @media only screen and (min-width: 1024px) {
+        margin-left: 57px;
+      }
+      @media only screen and (min-width: 1440px) {
+        margin-left: 0;
+      }
+
+      .home__title {
+        margin: 72px 0 0;
+        width: 20.1rem;
+
+        @media only screen and (min-width: 1024px) {
+          width: 100%;
+        }
+        @media only screen and (min-width: 1440px) {
+          width: 45.6rem;
+        }
+
+        .home__title-main {
+          text-align: center;
+
+          h1 {
+            @include font-styles(#fff, $font-family-montserrat, 21px, normal, 900, normal, normal, uppercase);
+
+            @media only screen and (min-width: 768px) {
+              text-align: left;
+              font-size: 35px;
+            }
+            @media only screen and (min-width: 1024px) {
+              font-size: 50px;
+            }
+            @media only screen and (min-width: 1440px) {
+              font-size: 64px;
+            }
+
+            span {
+              font-weight: 400;
+            }
+          }
+        }
+
+        .home__title-description {
+          width: 19rem;
+          margin: auto;
+          text-align: center;
+
+          @media only screen and (min-width: 768px) {
+            margin: 0;
+            text-align: justify;
+            width: 21.5rem;
+          }
+          @media only screen and (min-width: 1024px) {
+            width: 28.5rem;
+          }
+          @media only screen and (min-width: 1440px) {
+            width: 44.8rem;
+          }
+
+          p {
+            margin-top: 30px;
+            @include font-styles(#bababa, $font-family-rubik, 14px, normal, 300, normal, normal, none);
+
+            @media only screen and (min-width: 768px) {
+              font-size: 14.5px;
+              text-align: left;
+            }
+            @media only screen and (min-width: 1024px) {
+              font-size: 21px;
+            }
+            @media only screen and (min-width: 1440px) {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+
+      .home__title-button {
+        margin: 63px 0 30px;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 305px;
+        height: 64px;
+        background-color: #ffd540;
+
+        @media only screen and (min-width: 1024px) {
+          width: 359.578px;
+          margin-bottom: 0;
+        }
+
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          border-radius: 50px;
+          @include font-styles(#000, $font-family-montserrat, 12px, normal, 600, normal, normal, uppercase);
+
+          @media only screen and (min-width: 1024px) {
+            font-size: 14px;
+          }
+
+          img {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+    .home__title-image {
+      display: none;
+
+      @media only screen and (min-width: 768px) {
+        display: block;
+        height: 35rem;
+        width: 14.6rem;
+
+        @media only screen and (min-width: 1024px) {
+          width: 33.6rem;
+        }
+        @media only screen and (min-width: 1440px) {
+          height: 55rem;
+        }
+
+        img {
+          overflow: visible;
+          object-fit: cover;
+          height: 35rem;
+          object-position: -20px -30px;
+
+          @media only screen and (min-width: 1024px) {
+            height: 40rem;
+            object-position: -50px -40px;
+          }
+          @media only screen and (min-width: 1440px) {
+            height: 55rem;
+            object-position: -60px -60px;
+          }
+        }
+      }
+    }
+  }
+}

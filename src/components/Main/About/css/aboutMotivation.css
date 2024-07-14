@@ -1,0 +1,127 @@
+.aboutMotivation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 90px auto auto;
+  max-width: 74.25rem;
+}
+@media only screen and (min-width: 768px) {
+  .aboutMotivation {
+    flex-direction: row;
+    padding-left: 22.5px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .aboutMotivation {
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+}
+.aboutMotivation .aboutMotivation__title {
+  color: #fff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  .aboutMotivation .aboutMotivation__title {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .aboutMotivation .aboutMotivation__title {
+    font-size: 18px;
+  }
+}
+.aboutMotivation .aboutMotivation__title .aboutMotivation__title-header {
+  font-weight: 700;
+  text-align: center;
+  font-size: 22px;
+}
+@media only screen and (min-width: 768px) {
+  .aboutMotivation .aboutMotivation__title .aboutMotivation__title-header {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .aboutMotivation .aboutMotivation__title .aboutMotivation__title-header {
+    font-size: 32px;
+  }
+}
+.aboutMotivation .aboutMotivation__title .aboutMotivation__description .aboutMotivation__description-paragraph {
+  margin: 34px 40px auto;
+  text-align: left;
+  font-size: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .aboutMotivation .aboutMotivation__title .aboutMotivation__description .aboutMotivation__description-paragraph {
+    align-items: flex-start;
+    margin: 34px auto auto 0;
+    width: 365px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .aboutMotivation .aboutMotivation__title .aboutMotivation__description .aboutMotivation__description-paragraph {
+    width: 500px;
+    font-size: 18px;
+  }
+}
+.aboutMotivation .aboutMotivation__list {
+  margin: 34px auto auto;
+}
+@media only screen and (min-width: 768px) {
+  .aboutMotivation .aboutMotivation__list {
+    margin: 46px 0 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .aboutMotivation .aboutMotivation__list {
+    margin: 70px 0 0 50px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .aboutMotivation .aboutMotivation__list {
+    margin: 74px 0 0 190px;
+  }
+}
+.aboutMotivation .aboutMotivation__list ul {
+  color: #fff;
+  font-family: "Nunito";
+  font-weight: 400;
+  line-height: 32.052px;
+  max-width: 352px;
+  font-size: 14px;
+  text-align: justify;
+}
+@media only screen and (min-width: 1024px) {
+  .aboutMotivation .aboutMotivation__list ul {
+    font-size: 18px;
+  }
+}
+.aboutMotivation .aboutMotivation__list ul li {
+  margin: 0 40px;
+}
+.aboutMotivation .aboutMotivation__list ul li::before {
+  content: url("../../About/AboutTitle/image/dot.svg");
+  margin: 0 8px 0 0px;
+}
+.aboutMotivation .aboutMotivation__list ul li:not(:last-child) {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 375px) {
+  .aboutMotivation .aboutMotivation__list ul li {
+    margin: 0 30px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  .aboutMotivation .aboutMotivation__list ul li {
+    margin: 0 3px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .aboutMotivation .aboutMotivation__list ul li {
+    margin: 0 0 25px 33px;
+  }
+}/*# sourceMappingURL=aboutMotivation.css.map */

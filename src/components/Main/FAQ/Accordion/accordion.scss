@@ -1,0 +1,139 @@
+.faq_section{
+  background-color: #1B1B1B;
+  @media only screen and (max-width:1440px) {
+    width: 100%;
+    margin: auto;
+    // border: 3px solid rgb(128, 102, 0);
+  }
+  @media only screen and (min-width:1440px) {
+    width: 1366px;
+    margin: auto;
+    // border: 3px solid green;
+  }
+  .accordion {
+    width: 18rem; // max-width:85.375rem; original
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    // border: 4px solid red;  
+    @media only screen and (min-width:768px) {
+      flex-direction: row;
+      align-items: stretch;
+      width: 34rem;
+      padding: 70px 0px 100px;
+    }
+    @media only screen and (min-width:1024px) {
+      width: 55rem;
+      padding: 109px 0px 223px;
+    }
+    @media only screen and (min-width:1440px) {
+      padding: 109px 0px 223px;
+      width: 74rem;
+    }
+  
+    .accordion__title {
+      margin: 0 32px 32px 0;
+      // border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1; // Allow flex item to grow and shrink
+      
+      @media only screen and (min-width:768px) {
+        margin: 0 32px 32px 0;
+        max-width: 10rem;
+        max-height: 47.25rem;
+      }
+      @media only screen and (min-width:1440px) {
+        max-width: 15.9rem;
+      }
+  
+      .accordion__title-content {
+        color: #fff;
+        font-family: "Montserrat";
+        font-size: 2.1rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        @media only screen and (min-width:768px) {
+          writing-mode: vertical-rl;
+          font-size: 14rem;
+
+        }
+        
+        @media only screen and (min-width:1440px) {
+          font-size: 20.8rem;
+        }
+      }
+    }
+  
+    .accordion__inquirer {
+      // border: 4px solid red;
+      flex: 3; // Allow flex item to grow and shrink
+      display: flex;
+      flex-direction: column;
+      @media only screen and (min-width:1440px) {
+        margin-left: 45px;        
+      }
+  
+      .accordion__inquirer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch; // Align to stretch and fill the space
+        // border: 2px solid rgb(128, 0, 111);
+        margin-bottom: 34px;
+        flex: 1; // Allow flex item to grow and shrink
+        position: relative;
+        &:last-child {
+          margin-bottom: 0;
+        }
+  
+        .accordion__inquirer-title {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: #fff;
+          font-family: "Nunito";
+          font-size: 17px; // 24px original
+          font-weight: 700;
+          cursor: pointer;
+          transition: color 0.4s;
+          flex-shrink: 0;
+
+          .accordion__inquirer-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          @media only screen and (min-width:768px) {
+            font-size: 20px;
+          }
+          @media only screen and (min-width:1440px) {
+            font-size: 22px;
+          }
+        }  
+        .accordion__answer {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          margin-top: 12px;
+          flex: 1; // Allow flex item to grow and shrink
+  
+          .accordion__answer-description {
+            border-left: 2px solid rgb(246, 255, 0);
+            padding: 12px 17px; // padding: 24px 47px 24px 17px; - original
+            color: #fff;
+            font-family: "Nunito";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,45 @@
+// Mixins for responsive design and font styling.
+
+@mixin flex-adjustment($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+  }
+
+@mixin flex-direction($flex, $flex_direction){
+  display: $flex;
+  flex-direction: $flex_direction;
+}
+@mixin flex__direction-align($flex, $flex_direction, $flex_align){
+  display: $flex;
+  flex-direction: $flex_direction;
+  align-items: $flex_align;
+}
+@mixin width_height($width, $height){
+  width: $width;
+  height: $height;
+}
+  @mixin position-adjustment($position, $top, $left){
+    position: $position;
+    top: $top;
+    left: $left;
+  }
+  @mixin font-styles($color,$font-family, $size,$style, $weight, $lineHeight,$letterSpacing,$textTransform) {
+    color:$color;
+    font-family: $font-family;
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+    text-transform: $textTransform;
+  }
+
+  @mixin responsive-property($property, $min-width, $min-value, $max-width, $max-value) {
+    // Calculate the rate of change (slope)
+    $value-difference: $max-value - $min-value;
+    $width-difference: $max-width - $min-width;
+    $rate-of-change: $value-difference / $width-difference;
+  
+    #{$property}: clamp(#{$min-value}, calc(#{$min-value} + (100vw - #{$min-width}) * #{$rate-of-change}), #{$max-value});
+  }

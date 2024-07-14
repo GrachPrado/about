@@ -1,0 +1,59 @@
+.footer__register form {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  letter-spacing: 1.54px;
+  text-transform: uppercase;
+  width: 274px;
+  margin-top: 7.0625rem;
+}
+.footer__register form h2 {
+  width: 277px;
+}
+.footer__register form input {
+  padding: 0;
+  margin: 0 0 34px 0;
+  border-bottom: 1px solid #c4c4c4;
+  opacity: 0.5;
+  height: 28px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c4c4c4;
+  opacity: 0.5;
+  color: #fff;
+  font-family: "rubik", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.footer__register form input:first-of-type {
+  margin: 22px 0 25px 0;
+}
+.footer__register form ::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+  color: #fff;
+  font-family: "rubik", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.footer__register form ::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  color: #fff;
+  font-family: "rubik", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}/*# sourceMappingURL=FooterRegister.css.map */

@@ -1,0 +1,85 @@
+// DRY__Mobile-first
+@import "../../../scss/mixins.scss";
+@import "../../../scss/variables.scss";
+
+.footer__contact-links {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer__contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 295px;
+
+    h2 {
+      @include font-styles(
+        #fff,
+        $font-family-montserrat,
+        14px,
+        normal,
+        700,
+        normal,
+        normal,
+        uppercase
+      );
+    }
+
+    ul {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding-left: 0;
+
+      li {
+        margin-top: 12px;
+        list-style: none;
+        @include font-styles(
+          #fff,
+          $font-family-montserrat,
+          14px,
+          normal,
+          400,
+          normal,
+          normal,
+          uppercase
+        );
+
+        &:first-child {
+          margin-top: 14px;
+        }
+
+        span {
+          border-bottom: 2px solid $main_color;
+          padding-bottom: 2px;
+        }
+
+        a {
+          text-decoration: none;
+          width: 7.375rem; 
+          
+          &:hover,
+          &:active,
+          &.active {
+            color: $main_color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer__contact-links {
+    width: 132.5px;
+    display: inline-flex;
+    align-items: flex-start;
+
+    ul {
+      align-items: flex-start;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  max-width: 74.25rem;
+  min-height: 701px;
+  margin: auto;
+  // border: 4px solid rgb(255, 255, 255);
+  .schedule__title {
+    margin-bottom: 56px;
+    h4 {
+      color: #fff;
+      font-family: "Montserrat";
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+  .schedule__containers {
+    display: flex;
+    // border: 10px solid red;
+    .schedule__containers-time {
+      display: flex;
+      flex-direction: column;
+      .schedule__time {
+        // border: 2px solid yellow;
+        width: 147px;
+        height: 76px;
+        margin-bottom: 56px;
+        padding-top:33px ;
+        &:first-child {
+          color: #fff;
+          font-family: "Rubik";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: capitalize;
+          opacity: 0.4;
+          border-bottom: 1px solid rgba(184, 184, 184, 0.5);
+        }
+        &:not(:first-child) {
+          color: #ffd540;
+          font-family: "Rubik";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          border-right: 1px solid rgba(255, 255, 255, 0.38);
+        }
+      }
+    }
+    .schedule__containers-activities {
+      .schedule__activities {
+        display: flex;
+        margin-bottom: 56px;
+        margin-right: 5px;
+        & > div {
+          width: 147px;
+          height: 76px;
+          color: #fff;
+          font-family: "Rubik";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          padding: 14px 0 0 23px;
+          border-left: 1px solid rgba(255, 255, 255, 0.38);
+        }
+        &:first-child {
+          color: #fff;
+          font-family: "Rubik";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          opacity: 0.4;
+          border-bottom: 1px solid rgba(184, 184, 184, 0.5);
+          > div {
+            border-left: none;
+            padding-top:33px ;
+          }
+        }
+      }
+    }
+  }
+}

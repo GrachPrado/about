@@ -1,0 +1,199 @@
+@import "../../../../scss/mixins.scss";
+@import "../../../../scss/variables.scss";
+
+.coaches {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (min-width: 1440px) {
+    align-items: flex-start;
+  }
+  max-width: 74.25rem;
+  margin: 70px auto auto;
+
+  .coaches__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+    span {
+      font-weight: 400;
+    }
+    .secondTitle {
+      display: flex;
+      align-self: center;
+      h6,
+      span {
+        color: #fff;
+        font-family: "Nunito";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        margin-top: 42px;
+        span {
+          text-transform: capitalize;
+          margin-right: 0;
+        }
+      }
+    }
+    @media only screen and (min-width: 1440px) {
+      width: 74.25rem;
+      flex-direction: row;
+      justify-content: space-between;
+      .secondTitle {
+        margin-right: 72px;
+        h6,
+        span {
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .coaches__containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    @media only screen and (min-width: 768px) {
+      & > div:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+    @media only screen and (min-width: 1440px) {
+      & > div:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .coaches__containers-card {
+    width: 306px; /* 19.43rem converted to px */
+    @media only screen and (min-width: 768px) {
+      width: 375px; /* 23.43rem converted to px */
+    }
+    height: 412px; /* 25.75rem converted to px */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 6px solid #ffd540;
+    background-color: #1b1b1b;
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    img {
+      display: block;
+      width: 212px;
+      height: 212px;
+      margin-top: 48px;
+      border-radius: 50%;
+    }
+
+    .coaches__containers-cardDescription {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 32px;
+      position: relative;
+
+      h4 {
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+
+      p {
+        color: #ff3;
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        position: absolute;
+        top: 40px;
+        text-align: center;
+      }
+    }
+
+    .coaches__containers-description {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background-color: #ffd540;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: 0.5s ease;
+
+      .coaches__containers-text {
+        text-align: left;
+        margin-left: 10px;
+        @media only screen and (min-width: 768px) {
+          margin-left: 32px;
+        }
+
+        h4 {
+          position: absolute;
+          top: 56px;
+          color: #000;
+          text-align: center;
+          font-family: "Rubik", sans-serif;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        h5 {
+          position: absolute;
+          top: 193px;
+          color: #000;
+          text-align: center;
+          font-family: "Montserrat", sans-serif;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+
+        p {
+          position: absolute;
+          top: 234px;
+          color: #534c10;
+          font-family: "Rubik", sans-serif;
+          font-size: 21px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-align: left;
+          width: 19.4rem;
+        }
+      }
+    }
+
+    &:hover .coaches__containers-description {
+      bottom: 0;
+      height: 100%;
+    }
+  }
+}

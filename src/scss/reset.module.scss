@@ -1,0 +1,205 @@
+/* Eric Meyer's Reset CSS v2.0 - http://meyerweb.com/eric/tools/css/reset/ 
+   License: none (public domain)
+*/
+
+/* General Reset */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Additional Best Practices */
+
+/* Setting box-sizing for all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Resetting the body element */
+body {
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #333;
+    overflow-x: hidden;
+    // border: 10px solid red;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Resetting links */
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Resetting images */
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensuring consistent font and padding for inputs */
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Removing default background from buttons */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Resetting form elements */
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/* Resetting SVG elements */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Resetting tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Resetting captions */
+caption {
+    text-align: left;
+}
+
+/* Removing default padding from fieldsets */
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Removing default margin from legends */
+legend {
+    display: table;
+    max-width: 100%;
+    white-space: normal;
+    color: inherit;
+}
+
+/* Ensuring consistent appearance for forms */
+form {
+    margin: 0;
+    padding: 0;
+}

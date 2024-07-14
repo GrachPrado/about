@@ -1,0 +1,94 @@
+// // checked
+@import "../../../../../../scss/mixins.scss";
+@import "../../../../../../scss/variables.scss";
+.success__container {
+  @include position-adjustment(fixed, 50%, 50%);
+  transform: translate(-50%, -50%);
+  @include flex-direction(flex, column);
+  align-items: center;
+  justify-content: center;
+  @include width_height(calc(469px * 0.65), calc(525px * 0.65));
+  @media only screen and (min-width: 768px) {
+    @include width_height(469px, 525px);
+  }
+  background-color: $color-white;
+  z-index: 100;
+
+  .success__container-checkMark {
+    @include width_height(153px, 153px);
+    margin-top: 25px;
+    @media only screen and (min-width: 768px) {
+      @include width_height(193px, 193px);
+      margin-top: 42px;
+    }
+  }
+  .success__container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include font-styles(
+      #333,
+      $font-family-montserrat,
+      20px,
+      normal,
+      900,
+      normal,
+      normal,
+      none
+    );
+    margin: 16px 0 24px;
+    span {
+      margin: 10px auto auto;
+      font-weight: 400;
+    }
+  }
+  p {
+    margin-bottom: calc(41px * 0.8);
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 41px;
+    }
+    text-align: center;
+    @include font-styles(
+      #828282,
+      $font-family-rubik,
+      18px,
+      normal,
+      400,
+      normal,
+      normal,
+      lowercase
+    );
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  .success__container-close {
+    @include flex-adjustment(flex, center, center);
+    @include width_height(calc(389px * 0.7), calc(64px * 0.7));
+    @media only screen and (min-width: 768px) {
+      @include width_height(389px, 64px);
+    }
+    flex-shrink: 0;
+    background-color: $main_color;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: calc(56px * 0.6);
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 56px;
+    }
+    padding: 0;
+    cursor: pointer;
+    color: #000;
+    @include font-styles(
+      #000,
+      $font-family-montserrat,
+      14px,
+      normal,
+      600,
+      normal,
+      normal,
+      uppercase
+    );
+  }
+}

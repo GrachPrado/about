@@ -1,0 +1,208 @@
+.price {
+  background: url("./image/background_stage.png") no-repeat center / auto;
+  height: 1510px;
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+
+  // border: 5px solid red;
+  .price__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  .price_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content; /* Container width adapts to image size */
+    width: 100%; /* Ensures container doesn't exceed viewport width */
+    margin: auto; /* Centers the container horizontally */
+    position: relative;
+    @media only screen and (min-width: 1440px) {
+      width: 85rem;
+    }
+    height: 100%;
+    top: 118px;
+    // border: 5px solid pink;
+    /*test*/
+    .price_container-arrows{
+      display: flex;
+      justify-content: space-between;
+      width: 310px;
+      height: 78px;
+      position: absolute;
+      top: 0px;
+      z-index: 9;
+      .arrow-button{
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.5px solid white;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+        .fas{
+          color: white;
+          font-size: 25px;
+        }
+      }
+      @media only screen and (min-width:1440px) {
+        display: none;
+      }
+    }
+    /*test*/
+
+    .price__title {
+      position: absolute;
+      top:0;
+      color: #fff;
+      font-family: "Montserrat";
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: capitalize;
+      // border: 1px solid rgb(242, 0, 40);
+      @media only screen and (min-width:1440px) {
+        left: 90px;
+      }
+    }
+    .price_container-bills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      column-gap: 30px;
+      row-gap: 22px;
+      // border: 5px solid green;
+      z-index: 8;
+      position: absolute;
+      top: 140px;
+      @media only screen and (min-width: 768px) {
+        justify-content: center;
+      }
+      @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      &.priceBackwards {
+        transform: translateX(365px);
+      }
+      &.priceTransitioning {
+        transform: translateX(0);
+        transition: transform 1.5s ease-in-out;
+      }
+      .price__containers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 462px;
+        flex-shrink: 0;
+        background: #1b1b1b;
+        border-top: 5px solid #ff3;
+        border-radius: 25px;
+    
+        @media only screen and (min-width: 425px) {
+          width: 375px;
+        }
+        h3 {
+          color: #fff;
+          font-family: "Montserrat";
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: capitalize;
+          margin-top: 40px;
+        }
+        h4 {
+          color: #ffd540;
+          font-family: "Montserrat";
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+          margin-top: 43px;
+          span {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+        .price__containers-list {
+          margin-top: 48px;
+          padding-top: 40px;
+          color: #fff;
+          text-align: center;
+          font-family: "Montserrat";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          border-top: 1px solid #414141;
+          width: 295px;
+          display: flex;
+          justify-content: center;
+          position: relative;
+          @media only screen and (min-width:425px) {
+            justify-content: flex-start;
+          }
+          ul {
+            text-align: left;
+            li {
+              margin-left: 26px;
+              &:not(:last-child) {
+                margin-bottom: 16px;
+              }
+              &::before {
+                content: "•"; /* Custom bullet character */
+                color: #ffd540; /* Color of the bullet */
+                position: absolute;
+                left: 25px;
+                font-size: 60px; /* Adjust size if needed */
+                line-height: 0.15;
+                @media only screen and (min-width:425px) {
+                  left: 0;
+                }
+              }
+            }
+          }
+        }
+        .price-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 255px;
+          height: 56px;
+          margin-top: 44px;
+          border: 2px solid #ffd540;
+          border-radius: 25px;
+          cursor: pointer;
+          @media only screen and (min-width:425px) {
+            width: 295px;
+          }
+          p {
+            color: #ffd540;
+            text-align: center;
+            font-family: "Montserrat";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}

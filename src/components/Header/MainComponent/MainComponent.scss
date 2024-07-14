@@ -1,0 +1,28 @@
+// // Import mixins and variables. Checked
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins.scss";
+
+  header {
+    position: relative;
+    width: 100vw;
+    height: 8.75rem;
+    z-index: 999;
+    .header {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      max-width: 74.25rem;
+      height: 8.75rem;
+      margin: auto;
+      // border: 2px solid red;
+    }
+
+    @media only screen and (min-width: 769px) {
+      .header {
+        justify-content: space-around;
+        @include width_height(86.82vw, 143px);
+      }
+    }
+}

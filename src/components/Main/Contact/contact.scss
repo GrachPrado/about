@@ -1,0 +1,72 @@
+.contact {
+    max-width: 74.25rem;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;  
+    @media only screen and (min-width: 768px) {
+      align-items: stretch;
+    }
+  
+    .contact__info {
+      flex: 1;
+      margin: 15px 0 0 10px;
+  
+      @media only screen and (min-width: 375px) {
+        margin-left: 35px;
+      }
+  
+      @media only screen and (min-width: 425px) {
+        margin-left: 60px;
+      }
+  
+      @media only screen and (min-width: 768px) {
+        margin-left: 24px;
+      }
+      @media only screen and (min-width: 1024px) {
+        margin-left: 60px;
+      }
+      @media only screen and (min-width: 1440px) {
+        margin-left: 0;
+      }
+  
+      h4 {
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 33px;
+        font-weight: 900;
+        line-height: normal;
+      }
+  
+      p {
+        margin-top: 63px;
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+  
+    .contact__map {
+      flex: 1;
+      margin-top: 25px;
+  
+      iframe {
+        width: 100%;
+        margin: auto;
+        border: 0; /* Adding border: 0 here to ensure no border in iframe */
+      }
+      @media only screen and (min-width: 768px) {
+        margin: 25px;
+      }
+      @media only screen and (min-width: 1024px) {
+        margin: 20px 60px 0;
+      }
+      @media only screen and (min-width: 1440px) {
+        margin: 70px 0 0;
+      }
+    }
+  }
+  
