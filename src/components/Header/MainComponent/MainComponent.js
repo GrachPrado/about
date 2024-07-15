@@ -14,7 +14,7 @@ function MainComponent() {
   const touchEndX = useRef(0);
 
   const handleSwipe = () => {
-    if (touchStartX.current - touchEndX.current > 50) {
+    if (touchStartX.current - touchEndX.current < 50) {
       setIsOpen(false);
     }
   };
