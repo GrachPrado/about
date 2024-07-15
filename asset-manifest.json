@@ -1,11 +1,9 @@
 {
   "files": {
     "main.css": "/about/static/css/main.f9fa81ec.css",
-    "main.js": "/about/static/js/main.711eaa31.js",
+    "main.js": "/about/static/js/main.9535f965.js",
     "static/media/background_stage.png": "/about/static/media/background_stage.2f485ebd3079b839748e.png",
     "static/media/grappling-big.png": "/about/static/media/grappling-big.afad83eefb7359d5e490.png",
-    "static/media/thai_box-federation.jpeg": "/about/static/media/thai_box-federation.184c415777d172d731d0.jpeg",
-    "static/media/mma-federation.png": "/about/static/media/mma-federation.2d3f98c66bef2192b7e3.png",
     "static/media/secondary_coach.jpg": "/about/static/media/secondary_coach.d36cbfbd21423a0a16ec.jpg",
     "static/media/group_foto.png": "/about/static/media/group_foto.456c1ce55d2b0dd7e91f.png",
     "static/media/fa-solid-900.ttf": "/about/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
@@ -22,30 +20,32 @@
     "static/media/fa-solid-900.woff2": "/about/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
     "static/media/mma.png": "/about/static/media/mma.72ba3beda87d16c65277.png",
     "static/media/thai_box-max.jpeg": "/about/static/media/thai_box-max.cbf33174a586565b481b.jpeg",
+    "static/media/mma-federation.webp": "/about/static/media/mma-federation.b37eee429ec12405da53.webp",
     "static/media/mma_kids.png": "/about/static/media/mma_kids.ac81efe5b9e5cb8bbca5.png",
     "static/media/fa-brands-400.woff2": "/about/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
     "static/media/Muay_Thai_fighter.png": "/about/static/media/Muay_Thai_fighter.7c48eab09d11f0e2abd8.png",
-    "static/media/roma_hachko-small.png": "/about/static/media/roma_hachko-small.0a3742ff0323051ce11c.png",
     "static/media/mma_kid-max.jpeg": "/about/static/media/mma_kid-max.1c3bd6ea81331a643502.jpeg",
     "static/media/fa-regular-400.ttf": "/about/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
     "static/media/mma_background.webp": "/about/static/media/mma_background.8d6e1daf09d039c79b71.webp",
-    "static/media/chernova_ira-small.jpg": "/about/static/media/chernova_ira-small.0b6ec44ba72e8cc974b1.jpg",
-    "static/media/strong_nation.png": "/about/static/media/strong_nation.494889185301c50b9301.png",
+    "static/media/thai_box-federation.webp": "/about/static/media/thai_box-federation.3cc8cf1e850058b66d7b.webp",
     "static/media/union_about.png": "/about/static/media/union_about.1663ce8585e23dcd9c6c.png",
     "static/media/union.png": "/about/static/media/union.d0fdeff13197f3b00e5a.png",
     "static/media/fa-regular-400.woff2": "/about/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
     "static/media/artUnion.png": "/about/static/media/artUnion.08e869c30f3451c379ae.png",
     "static/media/aurum_FC.jpeg": "/about/static/media/aurum_FC.bc72f37ac71e3743c143.jpeg",
     "static/media/fa-v4compatibility.ttf": "/about/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
+    "static/media/roma_hachko-small.webp": "/about/static/media/roma_hachko-small.ebad0573492085e67cc8.webp",
+    "static/media/chernova_ira-small.webp": "/about/static/media/chernova_ira-small.94f7d86e6c8f3e267fde.webp",
+    "static/media/strong_nation.webp": "/about/static/media/strong_nation.a53b596d9007811db8ee.webp",
     "static/media/fa-v4compatibility.woff2": "/about/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "static/media/punch.svg": "/about/static/media/punch.e7cdada7013f9d6be145eb5acc90fc7e.svg",
     "index.html": "/about/index.html",
     "static/media/dot.svg": "/about/static/media/dot.e74976e321a145832062.svg",
     "main.f9fa81ec.css.map": "/about/static/css/main.f9fa81ec.css.map",
-    "main.711eaa31.js.map": "/about/static/js/main.711eaa31.js.map"
+    "main.9535f965.js.map": "/about/static/js/main.9535f965.js.map"
   },
   "entrypoints": [
     "static/css/main.f9fa81ec.css",
-    "static/js/main.711eaa31.js"
+    "static/js/main.9535f965.js"
   ]
 }
