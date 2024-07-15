@@ -1,6 +1,7 @@
 // CHECKED 15/07/2024
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter  as Router } from "react-router-dom";
 import MainComponent from "./components/Header/MainComponent/MainComponent";
 import HeaderRoutes from "./components/Header/HeaderRoutes";
 import Footer from "./components/Footer/Footer";
