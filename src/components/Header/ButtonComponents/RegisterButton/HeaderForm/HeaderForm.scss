@@ -1,36 +1,42 @@
-// // checked
+// checked 15/07/2024
 @import "../../../../../scss/mixins.scss";
 @import "../../../../../scss/variables.scss";
+
 .register-button__popup {
   @include position-adjustment(fixed, 50%, 50%);
   transform: translate(-50%, -50%);
   @include flex-direction(flex, column);
   align-items: center;
   @include width_height(calc(469px * 0.75), calc(525px * 0.75));
+  background-color: $color-white;
+  z-index: 9999; // Ensure this is above other elements
+
   @media only screen and (min-width: 768px) {
     @include width_height(469px, 525px);
   }
-  background-color: $color-white;
-  z-index: 9999; // Ensure this is above other elements
+
   .register-button__form {
     display: flex;
     flex-direction: column;
     margin: calc(56px * 0.55) 40px 0;
 
     @media only screen and (min-width: 768px) {
-    margin: 56px 40px 0;
+      margin: 56px 40px 0;
     }
+
     .register-button__title {
       @include font-styles(
         #333,
         $font-family-montserrat,
-      calc(26.4px * 0.75),
+        calc(26.4px * 0.75),
         normal,
         900,
         normal,
         normal,
         none
       );
+      margin: 0 0 18px;
+
       @media only screen and (min-width: 768px) {
         @include font-styles(
           #333,
@@ -43,7 +49,7 @@
           none
         );
       }
-      margin: 0 0 18px;
+
       span {
         background-color: $main_color;
         font-weight: 400;
@@ -52,9 +58,11 @@
 
     p {
       margin: 0 0 calc(57px * 0.35);
+
       @media only screen and (min-width: 768px) {
         margin: 0 0 57px;
       }
+
       @include font-styles(
         #828282,
         $font-family-rubik,
@@ -65,18 +73,20 @@
         normal,
         lowercase
       );
+
       @media only screen and (min-width: 768px) {
         @include font-styles(
-        #828282,
-        $font-family-rubik,
-        calc(18px),
-        normal,
-        400,
-        normal,
-        normal,
-        lowercase
-      );
+          #828282,
+          $font-family-rubik,
+          18px,
+          normal,
+          400,
+          normal,
+          normal,
+          lowercase
+        );
       }
+
       &::first-letter {
         text-transform: uppercase;
       }
@@ -89,17 +99,21 @@
       @include flex-adjustment(flex, center, center);
       height: 56px;
       width: calc(389px * 0.75);
+
       @media only screen and (min-width: 768px) {
         width: 389px;
       }
 
       &:nth-of-type(1) {
         margin-bottom: calc(35px * 0.75);
+
         @media only screen and (min-width: 768px) {
           margin-bottom: 35px;
         }
+
         padding-bottom: 0;
       }
+
       &:focus-within {
         opacity: 0.5;
       }
@@ -118,11 +132,11 @@
         opacity: 0.3;
         margin-left: 19px;
       }
+
       input {
         @include width_height(100%, 38px);
-        padding: 0;
+        padding: 0 14px;
         color: #000;
-        padding-left: 14px;
         border: none;
         @include font-styles(
           #000,
@@ -134,7 +148,8 @@
           normal,
           capitalize
         );
-        &:focus-within {
+
+        &:focus {
           outline: none;
         }
       }
@@ -143,18 +158,18 @@
     .register-button__submit {
       @include flex-adjustment(flex, center, center);
       @include width_height(calc(389px * 0.75), calc(64px * 0.75));
-      @media only screen and (min-width: 768px) {
-        @include width_height(389px, 64px);
-      }
       flex-shrink: 0;
       background-color: #e0e0e0;
       border-radius: 50px;
       border: none;
       margin-top: calc(72px * 0.75);
-      @media only screen and (min-width: 768px) {
-      margin-top: 72px;
-      }
       cursor: pointer;
+
+      @media only screen and (min-width: 768px) {
+        @include width_height(389px, 64px);
+        margin-top: 72px;
+      }
+
       span {
         color: #000;
         margin-left: 16px;
@@ -168,6 +183,7 @@
           normal,
           uppercase
         );
+
         @media only screen and (min-width: 768px) {
           @include font-styles(
             #000,
@@ -181,19 +197,27 @@
           );
         }
       }
-      svg{
+
+      svg {
         width: calc(30px * 0.75);
-          height:calc(26px * 0.75);
+        height: calc(26px * 0.75);
+
         @media only screen and (min-width: 768px) {
           width: 30px;
-        height: 26px;
+          height: 26px;
         }
       }
     }
   }
+
   .register-button__close {
     @extend .register-button__submit;
     @include width_height(13.69vw, 56px);
+    background-color: transparent;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+
     @include font-styles(
       #000,
       $font-family-montserrat,
@@ -204,21 +228,18 @@
       normal,
       uppercase
     );
+
     @media only screen and (min-width: 768px) {
       @include font-styles(
-      #000,
-      $font-family-montserrat,
-      14px,
-      normal,
-      600,
-      normal,
-      normal,
-      uppercase
-    );
+        #000,
+        $font-family-montserrat,
+        14px,
+        normal,
+        600,
+        normal,
+        normal,
+        uppercase
+      );
     }
-    cursor: pointer;
-    margin-top: 5px;
-    background-color: transparent;
-    border: none;
   }
 }

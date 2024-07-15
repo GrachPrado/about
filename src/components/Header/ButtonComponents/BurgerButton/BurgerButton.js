@@ -1,5 +1,6 @@
-// checked
+// checked 15/07/2024
 import React from "react";
+import PropTypes from "prop-types";
 import "./BurgerButtonStyles/BurgerButton.scss";
 
 function BurgerButton({ onClick, isActive }) {
@@ -15,5 +16,10 @@ function BurgerButton({ onClick, isActive }) {
   );
 }
 
-export default React.memo(BurgerButton);
+// Define PropTypes for type checking
+BurgerButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  isActive: PropTypes.bool.isRequired,
+};
 
+export default React.memo(BurgerButton);

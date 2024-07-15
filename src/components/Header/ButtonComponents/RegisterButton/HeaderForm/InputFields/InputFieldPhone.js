@@ -1,6 +1,8 @@
-// checked
+// checked 15/07/2024
 import React from "react";
+import PropTypes from "prop-types";
 
+// Validation function to format phone input
 const validatePhoneInput = (input) => {
   const digits = input.replace(/\D/g, "");
   const countryCode = "(+380)";
@@ -23,11 +25,12 @@ function InputFieldPhone({
   setTelephone,
   label,
   name,
-  type = 'tel',
+  type = "tel", // Default to 'tel' if no type is specified
   placeholder,
   value,
   style,
 }) {
+  // Handler for input changes
   const handlePhoneChange = (event) => {
     const input = event.target.value;
     const formattedInput = validatePhoneInput(input);
@@ -48,4 +51,16 @@ function InputFieldPhone({
     </fieldset>
   );
 }
+
+// Define PropTypes for type checking
+InputFieldPhone.propTypes = {
+  setTelephone: PropTypes.func.isRequired,
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
+  value: PropTypes.string.isRequired,
+  style: PropTypes.object,
+};
+
 export default React.memo(InputFieldPhone);

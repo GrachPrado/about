@@ -1,5 +1,6 @@
-// checked
+// checked 15/07/2024
 import React from "react";
+import PropTypes from "prop-types";
 
 function FormTitle({
   className,
@@ -16,5 +17,13 @@ function FormTitle({
     </>
   );
 }
+
+// Define PropTypes for type checking
+FormTitle.propTypes = {
+  className: PropTypes.string.isRequired,
+  mainTitle: PropTypes.string.isRequired,
+  spanContent: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default React.memo(FormTitle);

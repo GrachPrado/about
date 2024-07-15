@@ -1,27 +1,33 @@
-// // checked
+// checked 15/07/2024
 @import "../../../../../../scss/mixins.scss";
 @import "../../../../../../scss/variables.scss";
+
 .success__container {
+  // Base styles for mobile
   @include position-adjustment(fixed, 50%, 50%);
   transform: translate(-50%, -50%);
   @include flex-direction(flex, column);
   align-items: center;
   justify-content: center;
   @include width_height(calc(469px * 0.65), calc(525px * 0.65));
+  background-color: $color-white;
+  z-index: 100;
+
+  // Media queries for larger screens
   @media only screen and (min-width: 768px) {
     @include width_height(469px, 525px);
   }
-  background-color: $color-white;
-  z-index: 100;
 
   .success__container-checkMark {
     @include width_height(153px, 153px);
     margin-top: 25px;
+
     @media only screen and (min-width: 768px) {
       @include width_height(193px, 193px);
       margin-top: 42px;
     }
   }
+
   .success__container-title {
     display: flex;
     flex-direction: column;
@@ -38,16 +44,15 @@
       none
     );
     margin: 16px 0 24px;
+
     span {
       margin: 10px auto auto;
       font-weight: 400;
     }
   }
+
   p {
     margin-bottom: calc(41px * 0.8);
-    @media only screen and (min-width: 768px) {
-      margin-bottom: 41px;
-    }
     text-align: center;
     @include font-styles(
       #828282,
@@ -59,24 +64,24 @@
       normal,
       lowercase
     );
+
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 41px;
+    }
+
     &::first-letter {
       text-transform: uppercase;
     }
   }
+
   .success__container-close {
     @include flex-adjustment(flex, center, center);
     @include width_height(calc(389px * 0.7), calc(64px * 0.7));
-    @media only screen and (min-width: 768px) {
-      @include width_height(389px, 64px);
-    }
     flex-shrink: 0;
     background-color: $main_color;
     border-radius: 50px;
     border: none;
     margin-bottom: calc(56px * 0.6);
-    @media only screen and (min-width: 768px) {
-      margin-bottom: 56px;
-    }
     padding: 0;
     cursor: pointer;
     color: #000;
@@ -90,5 +95,11 @@
       normal,
       uppercase
     );
+
+    @media only screen and (min-width: 768px) {
+      @include width_height(389px, 64px);
+      margin-bottom: 56px;
+    }
   }
 }
+

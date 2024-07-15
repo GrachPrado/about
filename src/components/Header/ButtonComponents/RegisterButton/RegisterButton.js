@@ -1,5 +1,7 @@
+// checked 15/07/2024
 import React, { useState } from "react";
 import axios from "axios";
+import PropTypes from "prop-types";
 import HeaderForm from "./HeaderForm/HeaderForm";
 import SuccessFormContainer from "./HeaderForm/SuccessFormContainer/SuccessFormContainer";
 import ErrorFormContainer from "./HeaderForm/ErrorFormContainer/ErrorFormContainer";
@@ -10,11 +12,12 @@ const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT;
 const CHAT_ID = process.env.REACT_APP_CHAT_ID;
 const TOKEN = process.env.REACT_APP_TOKEN;
 
-export default function RegisterButton({className, description, children}) {
+export default function RegisterButton({ className, description, children }) {
   const [showPopup, setShowPopup] = useState(false);
   const [isSubmittedSuccessfully, setIsSubmittedSuccessfully] = useState(false);
   const [errorRegister, setErrorRegister] = useState(false);
 
+  // Toggle the visibility of the popup form
   const togglePopup = () => {
     setShowPopup(!showPopup);
     if (!showPopup) {
@@ -23,10 +26,12 @@ export default function RegisterButton({className, description, children}) {
     }
   };
 
-  const toggleSuccessForm = () => {
+  // Reset success form state
+  const resetSuccessForm = () => {
     setIsSubmittedSuccessfully(false);
   };
 
+  // Handle form submission
   const handleSubmit = async (formData) => {
     if (formData.telephone.length < 19) {
       setErrorRegister(true);
@@ -46,7 +51,8 @@ export default function RegisterButton({className, description, children}) {
     }
   };
 
-  const getOpacity = (value) => {
+  // Get opacity style based on a value
+  const getOpacityStyle = (value) => {
     return { opacity: value ? 1 : 0.2 };
   };
 
@@ -60,13 +66,13 @@ export default function RegisterButton({className, description, children}) {
       </div>
       {showPopup && (
         <HeaderForm
-          getOpacity={getOpacity}
+          getOpacity={getOpacityStyle}
           toggle={togglePopup}
           submit={handleSubmit}
         />
       )}
       {!showPopup && isSubmittedSuccessfully && (
-        <SuccessFormContainer toggle={toggleSuccessForm} />
+        <SuccessFormContainer toggle={resetSuccessForm} />
       )}
       {!showPopup && errorRegister && (
         <ErrorFormContainer
@@ -79,3 +85,10 @@ export default function RegisterButton({className, description, children}) {
     </>
   );
 }
+
+// Define prop types for type checking
+RegisterButton.propTypes = {
+  className: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  children: PropTypes.node,
+};

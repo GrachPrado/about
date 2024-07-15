@@ -1,6 +1,7 @@
-// checked
+// checked 15/07/2024
 import React from "react";
 
+// Validation function to check if the name input is valid
 const validateNameInput = (input) => /^[A-Za-zА-Яа-яЁё\s]{0,20}$/.test(input);
 
 function InputFieldName({
@@ -12,6 +13,7 @@ function InputFieldName({
   value,
   style,
 }) {
+  // Handler for input changes
   const handleNameChange = (event) => {
     const { value: newName } = event.target;
     if (validateNameInput(newName) || newName === "") {

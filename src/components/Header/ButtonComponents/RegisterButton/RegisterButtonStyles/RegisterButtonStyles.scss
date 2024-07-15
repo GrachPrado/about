@@ -1,13 +1,11 @@
-// // checked
+// checked 15/07/2024
 @import "../../../../../scss/mixins.scss";
 @import "../../../../../scss/variables.scss";
 
 .register-button {
   display: none;
-}
 
-@media only screen and (min-width: 425px) {
-  .register-button {
+  @media only screen and (min-width: 425px) {
     @include flex-adjustment(flex, center, center);
     @include width_height(187px, 56px);
     flex-shrink: 0;
@@ -23,7 +21,7 @@
       border: none;
       color: inherit;
       cursor: pointer;
-      
+
       @include font-styles(
         $main_color,
         $font-family-montserrat,

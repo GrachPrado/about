@@ -1,5 +1,6 @@
-// checked
+// checked 15/07/2024
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { ReactComponent as Icon } from "../RegisterButtonImage/punch.svg";
 import FormTitle from "./FormTitle/FormTitle";
 import InputFieldName from "./InputFields/InputFieldName";
@@ -10,11 +11,11 @@ import CloseFormButton from "./CloseForm/CloseFormButton";
 const HeaderForm = ({ getOpacity, toggle, submit }) => {
   const [name, setName] = useState("");
   const [telephone, setTelephone] = useState("");
-  
- const handleFormSubmit = (event) => {
-  event.preventDefault();
-  submit({ name, telephone });
-};
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    submit({ name, telephone });
+  };
 
   return (
     <div
@@ -29,9 +30,9 @@ const HeaderForm = ({ getOpacity, toggle, submit }) => {
       >
         <FormTitle
           className="register-button__title"
-          mainTitle={"Записатись на"}
-          spanContent={"тренування"}
-          description={"Залиште заявку та ми з вами зв'яжимось"}
+          mainTitle="Записатись на"
+          spanContent="тренування"
+          description="Залиште заявку та ми з вами зв'яжимось"
         />
         <InputFieldName
           setName={setName}
@@ -57,8 +58,9 @@ const HeaderForm = ({ getOpacity, toggle, submit }) => {
           className="register-button__submit"
           type="submit"
           Icon={Icon}
-          children="відправити заявку"
-        />
+        >
+          відправити заявку
+        </FormButtonSubmit>
       </form>
       <CloseFormButton
         className="register-button__close"
@@ -70,4 +72,12 @@ const HeaderForm = ({ getOpacity, toggle, submit }) => {
   );
 };
 
+HeaderForm.propTypes = {
+  getOpacity: PropTypes.func.isRequired,
+  toggle: PropTypes.func.isRequired,
+  submit: PropTypes.func.isRequired,
+};
+
 export default HeaderForm;
+
+

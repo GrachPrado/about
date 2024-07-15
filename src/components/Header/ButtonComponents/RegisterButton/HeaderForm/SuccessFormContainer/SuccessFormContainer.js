@@ -1,11 +1,10 @@
-// Checked
+// checked 15/07/2024
 import React from "react";
+import PropTypes from "prop-types";
 import FormTitle from "../FormTitle/FormTitle";
 import "./SuccessFormContainer.scss";
 
-function SuccessFormContainer({
-  toggle,
-}) {
+function SuccessFormContainer({ toggle }) {
   return (
     <div
       className="success__container"
@@ -25,10 +24,10 @@ function SuccessFormContainer({
         />
       </svg>
       <FormTitle
-        className={"success__container-title"}
-        mainTitle={"Заявка успішно"}
-        spanContent={"відправлена"}
-        description={"Ми з вами зв'яжимось"}
+        className="success__container-title"
+        mainTitle="Заявка успішно"
+        spanContent="відправлена"
+        description="Ми з вами зв'яжимось"
       />
       <button
         className="success__container-close"
@@ -40,4 +39,9 @@ function SuccessFormContainer({
     </div>
   );
 }
+
+SuccessFormContainer.propTypes = {
+  toggle: PropTypes.func.isRequired,
+};
+
 export default React.memo(SuccessFormContainer);

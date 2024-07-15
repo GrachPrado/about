@@ -1,10 +1,11 @@
+// CHECKED 15/07/2024
 @import "../../../../scss/variables.scss";
 @import "../../../../scss/mixins.scss";
 
 .header__nav {
   @include position-adjustment(fixed, 0, -225px);
   @include flex-direction(flex, column);
-  @include width_height(220px, 96%);
+  @include width_height(220px, 100%);
   background-color: $background-color;
   transition: transform 0.3s linear;
   @include font-styles(
@@ -17,6 +18,7 @@
     normal,
     uppercase
   );
+
   &.active {
     transform: translateX(100%);
   }
