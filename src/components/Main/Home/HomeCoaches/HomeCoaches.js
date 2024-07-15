@@ -50,7 +50,7 @@ function HomeCoaches({secondTitle}) {
           return (
             <div key={item.id} className="coaches__containers-card">
               <div>
-                <img src={item.foto} alt={item.name} />
+                <img src={item.foto} alt={item.name} loading="lazy" />
               </div>
               <div className="coaches__containers-cardDescription">
                 <h4>{item.name}</h4>

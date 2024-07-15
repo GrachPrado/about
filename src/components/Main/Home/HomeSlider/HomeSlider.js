@@ -129,6 +129,7 @@ function HomeSlider() {
                 src={item.path}
                 alt={item.label}
                 onClick={() => handleImageClick(itemIndex)}
+                loading="lazy"
               />
             </div>
           );

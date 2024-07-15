@@ -38,7 +38,7 @@ function HomePartners() {
       </div>
       <div className="partners__gallery">
         {partners.map((item) => {
-          return <img key={item.id} src={item.partner} alt={item.label} />;
+          return <img key={item.id} src={item.partner} alt={item.label} loading="lazy" />;
         })}
       </div>
     </section>

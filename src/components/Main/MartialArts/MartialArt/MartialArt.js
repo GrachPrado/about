@@ -15,11 +15,11 @@ function MartialArt({ art, artDesc, artPng, top }) {
           className="martialArt__title-button"
           description="записатись на тренування"
         >
-          <img src={Icon} alt="Register for training" />
+          <img src={Icon} alt="Register for training" loading="lazy"/>
         </RegisterButton>
       </div>
       <div className="martialArt__title-image">
-        <img src={artPng} alt={`${art}`} />
+        <img src={artPng} alt={`${art}`} loading="lazy"/>
       </div>
     </section>
   );

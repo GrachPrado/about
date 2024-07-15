@@ -30,7 +30,7 @@ export default function AboutGallery() {
     <section className="aboutGallery">
       {bottomGallery.map((item) => (
         <div key={item.id} className="galleryItem" onClick={() => handleImageClick(item.path)}>
-          <img src={item.path} alt="Gallery item" />
+          <img src={item.path} alt="Gallery item" loading="lazy"/>
         </div>
       ))}
       <Modal show={showModal} onClose={handleCloseModal} image={modalImage} />

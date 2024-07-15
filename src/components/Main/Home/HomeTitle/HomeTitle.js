@@ -19,12 +19,12 @@ function HomeTitle() {
       </div>
     {/*Subscription__button*/}
       <RegisterButton className={"home__title-button"} description={"записатись на тренування"}>
-      <img src={Icon} alt="punch"/>
+      <img src={Icon} alt="punch" loading="lazy"/>
       </RegisterButton>
       </div>
           {/*Image*/}
           <div className="home__title-image" >
-            <img src={coach} alt="coach"/>
+            <img src={coach} alt="coach" loading="lazy"/> {/*Finished on lazy loading*/}
       </div>
     </section>
   );
