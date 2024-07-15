@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./HomeSlider.scss";
-import mma_background from "./Slider__image/mma_background.png";
+import mma_background from "./Slider__image/mma_background.webp";
 import thai_boxMax from "./Slider__image/thai_box-max.jpeg";
 import thai_boxMin from "./Slider__image/thai_box-min.png";
 import grappling_max from "./Slider__image/grappling-big.png";
