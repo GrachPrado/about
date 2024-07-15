@@ -34,7 +34,7 @@ export default function NavigationMenu({ className }) {
     { id: 6, to: "/Thaibox", label: "тайський бо", postfix: "кс" },
     { id: 7, to: "/MMA", label: "мм", postfix: "а" },
     { id: 8, to: "/MMAChildren", label: "mma-ki", postfix: "ds" },
-    { id: 9, to: "/Contact", label: "контакт", postfix: "и" },
+    { id: 9, to: "/Contacts", label: "контакт", postfix: "и" },
     { id: 10, to: "/FAQ", label: "fa", postfix: "q" },
   ];
 
