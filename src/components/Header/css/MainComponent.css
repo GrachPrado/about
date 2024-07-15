@@ -1,0 +1,25 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  width: 100vw;
+  height: 8.75rem;
+  z-index: 999;
+}
+header .header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  max-width: 74.25rem;
+  height: 8.75rem;
+  margin: auto;
+}
+@media only screen and (min-width: 769px) {
+  header .header {
+    justify-content: space-around;
+    width: 86.82vw;
+    height: 143px;
+  }
+}/*# sourceMappingURL=MainComponent.css.map */

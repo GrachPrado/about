@@ -1,0 +1,116 @@
+.timeTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.timeTable.topTimeTable {
+  top: 60px;
+}
+@media only screen and (min-width: 1024px) {
+  .timeTable {
+    background-image: url("./image/Muay_Thai_fighter.png");
+    background-repeat: no-repeat;
+    background-position: 400px 0px;
+    align-items: flex-start;
+    margin-left: 65px;
+  }
+}
+.timeTable .timeTable__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 74.25rem;
+  margin-bottom: 56px;
+}
+@media only screen and (min-width: 1024px) {
+  .timeTable .timeTable__title {
+    align-items: flex-start;
+    margin-left: 65px;
+  }
+}
+.timeTable .timeTable__title label {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 26px;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: center;
+}
+.timeTable .timeTable__title select {
+  color: #FFF;
+  font-family: "Rubik";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  height: 45px;
+  margin-top: 56px;
+  border: none;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+  outline: none;
+  text-align: center; /* Center text inside the select */
+  -moz-text-align-last: center;
+       text-align-last: center; /* Center the selected option */
+}
+.timeTable .timeTable__title select option {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid red;
+}
+.timeTable .timeTable__containers {
+  display: flex;
+}
+.timeTable .timeTable__containers .timeTable__containers-time {
+  display: flex;
+  flex-direction: column;
+}
+.timeTable .timeTable__containers .timeTable__containers-time .timeTable__time {
+  width: 147px;
+  height: 76px;
+  margin-bottom: 56px;
+  padding: 14px 0 0 24px;
+}
+.timeTable .timeTable__containers .timeTable__containers-time .timeTable__time:first-child {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom: 2px solid rgba(184, 184, 184, 0.5);
+}
+.timeTable .timeTable__containers .timeTable__containers-time .timeTable__time:not(:first-child) {
+  color: #ffd540;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  border-right: 2px solid rgba(255, 255, 255, 0.38);
+}
+.timeTable .timeTable__containers .timeTable__containers-item {
+  display: flex;
+  flex-direction: column;
+}
+.timeTable .timeTable__containers .timeTable__containers-item .timeTable__activities {
+  width: 147px;
+  height: 76px;
+  margin-bottom: 56px;
+  padding: 14px 0 0 24px;
+}
+.timeTable .timeTable__containers .timeTable__containers-item .timeTable__activities:first-child {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom: 2px solid rgba(184, 184, 184, 0.5);
+}
+.timeTable .timeTable__containers .timeTable__containers-item .timeTable__activities:not(:first-child) {
+  color: #fff;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  border-right: 2px solid rgba(255, 255, 255, 0.38);
+}/*# sourceMappingURL=MobileTimeTable.css.map */

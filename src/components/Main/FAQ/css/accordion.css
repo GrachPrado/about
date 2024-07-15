@@ -1,0 +1,145 @@
+.faq_section {
+  background-color: #1B1B1B;
+}
+@media only screen and (max-width: 1440px) {
+  .faq_section {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .faq_section {
+    width: 1366px;
+    margin: auto;
+  }
+}
+.faq_section .accordion {
+  width: 18rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media only screen and (min-width: 768px) {
+  .faq_section .accordion {
+    flex-direction: row;
+    align-items: stretch;
+    width: 34rem;
+    padding: 70px 0px 100px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .faq_section .accordion {
+    width: 55rem;
+    padding: 109px 0px 223px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .faq_section .accordion {
+    padding: 109px 0px 223px;
+    width: 74rem;
+  }
+}
+.faq_section .accordion .accordion__title {
+  margin: 0 32px 32px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+@media only screen and (min-width: 768px) {
+  .faq_section .accordion .accordion__title {
+    margin: 0 32px 32px 0;
+    max-width: 10rem;
+    max-height: 47.25rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .faq_section .accordion .accordion__title {
+    max-width: 15.9rem;
+  }
+}
+.faq_section .accordion .accordion__title .accordion__title-content {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 2.1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .faq_section .accordion .accordion__title .accordion__title-content {
+    writing-mode: vertical-rl;
+    font-size: 14rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .faq_section .accordion .accordion__title .accordion__title-content {
+    font-size: 20.8rem;
+  }
+}
+.faq_section .accordion .accordion__inquirer {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1440px) {
+  .faq_section .accordion .accordion__inquirer {
+    margin-left: 45px;
+  }
+}
+.faq_section .accordion .accordion__inquirer .accordion__inquirer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 34px;
+  flex: 1;
+  position: relative;
+}
+.faq_section .accordion .accordion__inquirer .accordion__inquirer-container:last-child {
+  margin-bottom: 0;
+}
+.faq_section .accordion .accordion__inquirer .accordion__inquirer-container .accordion__inquirer-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-family: "Nunito";
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.4s;
+  flex-shrink: 0;
+}
+.faq_section .accordion .accordion__inquirer .accordion__inquirer-container .accordion__inquirer-title .accordion__inquirer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .faq_section .accordion .accordion__inquirer .accordion__inquirer-container .accordion__inquirer-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .faq_section .accordion .accordion__inquirer .accordion__inquirer-container .accordion__inquirer-title {
+    font-size: 22px;
+  }
+}
+.faq_section .accordion .accordion__inquirer .accordion__inquirer-container .accordion__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-top: 12px;
+  flex: 1;
+}
+.faq_section .accordion .accordion__inquirer .accordion__inquirer-container .accordion__answer .accordion__answer-description {
+  border-left: 2px solid rgb(246, 255, 0);
+  padding: 12px 17px;
+  color: #fff;
+  font-family: "Nunito";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}/*# sourceMappingURL=accordion.css.map */

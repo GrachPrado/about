@@ -1,0 +1,85 @@
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  max-width: 74.25rem;
+  min-height: 701px;
+  margin: auto;
+}
+.schedule .schedule__title {
+  margin-bottom: 56px;
+}
+.schedule .schedule__title h4 {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.schedule .schedule__containers {
+  display: flex;
+}
+.schedule .schedule__containers .schedule__containers-time {
+  display: flex;
+  flex-direction: column;
+}
+.schedule .schedule__containers .schedule__containers-time .schedule__time {
+  width: 147px;
+  height: 76px;
+  margin-bottom: 56px;
+  padding-top: 33px;
+}
+.schedule .schedule__containers .schedule__containers-time .schedule__time:first-child {
+  color: #fff;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  opacity: 0.4;
+  border-bottom: 1px solid rgba(184, 184, 184, 0.5);
+}
+.schedule .schedule__containers .schedule__containers-time .schedule__time:not(:first-child) {
+  color: #ffd540;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-right: 1px solid rgba(255, 255, 255, 0.38);
+}
+.schedule .schedule__containers .schedule__containers-activities .schedule__activities {
+  display: flex;
+  margin-bottom: 56px;
+  margin-right: 5px;
+}
+.schedule .schedule__containers .schedule__containers-activities .schedule__activities > div {
+  width: 147px;
+  height: 76px;
+  color: #fff;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 14px 0 0 23px;
+  border-left: 1px solid rgba(255, 255, 255, 0.38);
+}
+.schedule .schedule__containers .schedule__containers-activities .schedule__activities:first-child {
+  color: #fff;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.4;
+  border-bottom: 1px solid rgba(184, 184, 184, 0.5);
+}
+.schedule .schedule__containers .schedule__containers-activities .schedule__activities:first-child > div {
+  border-left: none;
+  padding-top: 33px;
+}/*# sourceMappingURL=timeTable.css.map */
