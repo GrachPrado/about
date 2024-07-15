@@ -3,7 +3,9 @@
 @import "../../../scss/mixins.scss";
 
 header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  background-color: black;
   width: 100vw;
   height: 8.75rem;
   z-index: 999;
