@@ -27,15 +27,15 @@ export default function NavigationMenu({ className }) {
 
   const navItems = [
     { id: 1, to: "/", label: "головн", postfix: "а" },
-    { id: 2, to: "/price", label: "цін", postfix: "и" },
-    { id: 3, to: "/schedule", label: "розклад" },
-    { id: 4, to: "/about", label: "o на", postfix: "с" },
-    { id: 5, to: "/grappling", label: "грепплі", postfix: "нг" },
-    { id: 6, to: "/thaibox", label: "тайський бо", postfix: "кс" },
-    { id: 7, to: "/mma", label: "мм", postfix: "а" },
+    { id: 2, to: "/Price", label: "цін", postfix: "и" },
+    { id: 3, to: "/Schedule", label: "розклад" },
+    { id: 4, to: "/About", label: "o на", postfix: "с" },
+    { id: 5, to: "/Grappling", label: "грепплі", postfix: "нг" },
+    { id: 6, to: "/Thaibox", label: "тайський бо", postfix: "кс" },
+    { id: 7, to: "/MMA", label: "мм", postfix: "а" },
     { id: 8, to: "/MMAChildren", label: "mma-ki", postfix: "ds" },
-    { id: 9, to: "/contacts", label: "контакт", postfix: "и" },
-    { id: 10, to: "/faq", label: "fa", postfix: "q" },
+    { id: 9, to: "/Contact", label: "контакт", postfix: "и" },
+    { id: 10, to: "/FAQ", label: "fa", postfix: "q" },
   ];
 
   const dropdownItems = navItems.slice(4, 8);
