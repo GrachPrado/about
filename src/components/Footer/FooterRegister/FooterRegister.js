@@ -55,7 +55,7 @@ function FooterRegister() {
       <form
         onSubmit={submit}
         className="register-footer__form"
-        aria-describedby="formDesc"
+        aria-describedby="form-description"
       >
         <h2>записатись на тренування</h2>
         <FooterRegisterName
