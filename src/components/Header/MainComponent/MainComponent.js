@@ -13,7 +13,7 @@ function MainComponent() {
   const touchEndX = useRef(0);
 
   const handleSwipe = useCallback(() => {
-    if (touchStartX.current - touchEndX.current > 50) {
+    if (touchStartX.current - touchEndX.current > 5) {
       setIsOpen(false);
     }
   }, []);
