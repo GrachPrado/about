@@ -1,5 +1,4 @@
-// CHECKED 15/07/2024 thrice
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import HeaderLogo from "../HeaderLogo/HeaderLogo";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
 import BurgerButton from "../ButtonComponents/BurgerButton/BurgerButton";
@@ -13,26 +12,26 @@ function MainComponent() {
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
-  const handleSwipe = () => {
-    if (touchStartX.current - touchEndX.current < 50) {
+  const handleSwipe = useCallback(() => {
+    if (touchStartX.current - touchEndX.current > 50) {
       setIsOpen(false);
     }
-  };
+  }, []);
 
-  const handleTouchStart = (e) => {
+  const handleTouchStart = useCallback((e) => {
     touchStartX.current = e.changedTouches[0].screenX;
-  };
+  }, []);
 
-  const handleTouchEnd = (e) => {
+  const handleTouchEnd = useCallback((e) => {
     touchEndX.current = e.changedTouches[0].screenX;
     handleSwipe();
-  };
+  }, [handleSwipe]);
 
-  const handleClickOutside = (event) => {
+  const handleClickOutside = useCallback((event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
       setIsOpen(false);
     }
-  };
+  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -50,7 +49,7 @@ function MainComponent() {
       document.removeEventListener("touchstart", handleTouchStart);
       document.removeEventListener("touchend", handleTouchEnd);
     };
-  }, [isOpen]);
+  }, [isOpen, handleClickOutside, handleTouchStart, handleTouchEnd]);
 
   const className = `header__nav ${isOpen ? "active" : ""}`;
 
