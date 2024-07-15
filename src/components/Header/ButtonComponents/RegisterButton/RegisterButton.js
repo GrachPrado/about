@@ -61,7 +61,7 @@ export default function RegisterButton({ className, description, children }) {
       <div className={className} onClick={togglePopup}>
         <button className="register-button__open">
           {children}
-          <p>{description}</p>
+          {description}
         </button>
       </div>
       {showPopup && (
