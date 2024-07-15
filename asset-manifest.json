@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/about/static/css/main.0ad4c75d.css",
-    "main.js": "/about/static/js/main.a4de4e3f.js",
+    "main.css": "/about/static/css/main.d9268712.css",
+    "main.js": "/about/static/js/main.9b04c472.js",
     "static/media/background_stage.png": "/about/static/media/background_stage.2f485ebd3079b839748e.png",
     "static/media/secondary_coach.jpg": "/about/static/media/secondary_coach.d36cbfbd21423a0a16ec.jpg",
     "static/media/group_foto.png": "/about/static/media/group_foto.456c1ce55d2b0dd7e91f.png",
@@ -30,22 +30,22 @@
     "static/media/artUnion.png": "/about/static/media/artUnion.08e869c30f3451c379ae.png",
     "static/media/thai_box-min.webp": "/about/static/media/thai_box-min.b7aeccd4d76cc748b69f.webp",
     "static/media/footer_background.webp": "/about/static/media/footer_background.1a5d2245681659e450bd.webp",
-    "static/media/union.webp": "/about/static/media/union.e63cc2a42c262291142f.webp",
     "static/media/aurum_FC.jpeg": "/about/static/media/aurum_FC.bc72f37ac71e3743c143.jpeg",
     "static/media/grappling-min.webp": "/about/static/media/grappling-min.a061ddf806e531b2657d.webp",
     "static/media/fa-v4compatibility.ttf": "/about/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/roma_hachko-small.webp": "/about/static/media/roma_hachko-small.ebad0573492085e67cc8.webp",
     "static/media/chernova_ira-small.webp": "/about/static/media/chernova_ira-small.94f7d86e6c8f3e267fde.webp",
     "static/media/strong_nation.webp": "/about/static/media/strong_nation.a53b596d9007811db8ee.webp",
+    "static/media/union.webp": "/about/static/media/union.6bbed1862d45d07f39f2.webp",
     "static/media/fa-v4compatibility.woff2": "/about/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "static/media/punch.svg": "/about/static/media/punch.e7cdada7013f9d6be145eb5acc90fc7e.svg",
     "index.html": "/about/index.html",
     "static/media/dot.svg": "/about/static/media/dot.e74976e321a145832062.svg",
-    "main.0ad4c75d.css.map": "/about/static/css/main.0ad4c75d.css.map",
-    "main.a4de4e3f.js.map": "/about/static/js/main.a4de4e3f.js.map"
+    "main.d9268712.css.map": "/about/static/css/main.d9268712.css.map",
+    "main.9b04c472.js.map": "/about/static/js/main.9b04c472.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ad4c75d.css",
-    "static/js/main.a4de4e3f.js"
+    "static/css/main.d9268712.css",
+    "static/js/main.9b04c472.js"
   ]
 }
