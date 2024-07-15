@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/about/static/css/main.f9fa81ec.css",
-    "main.js": "/about/static/js/main.9535f965.js",
+    "main.js": "/about/static/js/main.5e981e25.js",
     "static/media/background_stage.png": "/about/static/media/background_stage.2f485ebd3079b839748e.png",
     "static/media/grappling-big.png": "/about/static/media/grappling-big.afad83eefb7359d5e490.png",
     "static/media/secondary_coach.jpg": "/about/static/media/secondary_coach.d36cbfbd21423a0a16ec.jpg",
@@ -42,10 +42,10 @@
     "index.html": "/about/index.html",
     "static/media/dot.svg": "/about/static/media/dot.e74976e321a145832062.svg",
     "main.f9fa81ec.css.map": "/about/static/css/main.f9fa81ec.css.map",
-    "main.9535f965.js.map": "/about/static/js/main.9535f965.js.map"
+    "main.5e981e25.js.map": "/about/static/js/main.5e981e25.js.map"
   },
   "entrypoints": [
     "static/css/main.f9fa81ec.css",
-    "static/js/main.9535f965.js"
+    "static/js/main.5e981e25.js"
   ]
 }
