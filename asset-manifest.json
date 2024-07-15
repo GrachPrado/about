@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/about/static/css/main.f9fa81ec.css",
+    "main.css": "/about/static/css/main.cd300b9e.css",
     "main.js": "/about/static/js/main.5e981e25.js",
     "static/media/background_stage.png": "/about/static/media/background_stage.2f485ebd3079b839748e.png",
     "static/media/grappling-big.png": "/about/static/media/grappling-big.afad83eefb7359d5e490.png",
@@ -29,9 +29,9 @@
     "static/media/mma_background.webp": "/about/static/media/mma_background.8d6e1daf09d039c79b71.webp",
     "static/media/thai_box-federation.webp": "/about/static/media/thai_box-federation.3cc8cf1e850058b66d7b.webp",
     "static/media/union_about.png": "/about/static/media/union_about.1663ce8585e23dcd9c6c.png",
-    "static/media/union.png": "/about/static/media/union.d0fdeff13197f3b00e5a.png",
     "static/media/fa-regular-400.woff2": "/about/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
     "static/media/artUnion.png": "/about/static/media/artUnion.08e869c30f3451c379ae.png",
+    "static/media/union.webp": "/about/static/media/union.e63cc2a42c262291142f.webp",
     "static/media/aurum_FC.jpeg": "/about/static/media/aurum_FC.bc72f37ac71e3743c143.jpeg",
     "static/media/fa-v4compatibility.ttf": "/about/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/roma_hachko-small.webp": "/about/static/media/roma_hachko-small.ebad0573492085e67cc8.webp",
@@ -41,11 +41,11 @@
     "static/media/punch.svg": "/about/static/media/punch.e7cdada7013f9d6be145eb5acc90fc7e.svg",
     "index.html": "/about/index.html",
     "static/media/dot.svg": "/about/static/media/dot.e74976e321a145832062.svg",
-    "main.f9fa81ec.css.map": "/about/static/css/main.f9fa81ec.css.map",
+    "main.cd300b9e.css.map": "/about/static/css/main.cd300b9e.css.map",
     "main.5e981e25.js.map": "/about/static/js/main.5e981e25.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9fa81ec.css",
+    "static/css/main.cd300b9e.css",
     "static/js/main.5e981e25.js"
   ]
 }
