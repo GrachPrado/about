@@ -1,3 +1,4 @@
+// CHECKED 15/07/2024
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import HeaderLogo from "../HeaderLogo/HeaderLogo";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
