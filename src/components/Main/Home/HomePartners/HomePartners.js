@@ -1,8 +1,8 @@
 import React from "react";
 import "./HomePartners.scss";
-import mma_federation from "./image/mma-federation.png";
-import thaiBox_federation from "./image/thai_box-federation.jpeg";
-import strong__nation from "./image/strong_nation.png";
+import mma_federation from "./image/mma-federation.webp";
+import thaiBox_federation from "./image/thai_box-federation.webp";
+import strong__nation from "./image/strong_nation.webp";
 import aurum from "./image/aurum_FC.jpeg";
 
 const partners = [

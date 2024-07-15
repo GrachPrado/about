@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomeCoaches.scss";
-import roma_hachko from "./image/roma_hachko-small.png";
-import chernova_irina from "./image/chernova_ira-small.jpg";
+import roma_hachko from "./image/roma_hachko-small.webp";
+import chernova_irina from "./image/chernova_ira-small.webp";
 // import klimov_anton from "./image/anton_klimov.jpg";
 
 const coachesInfo = [
