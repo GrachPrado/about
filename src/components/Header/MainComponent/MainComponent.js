@@ -1,4 +1,4 @@
-// checked 15/07/2024
+// checked 15/07/2024 twice
 import React, { useState, useEffect, useRef } from "react";
 import HeaderLogo from "../HeaderLogo/HeaderLogo";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
