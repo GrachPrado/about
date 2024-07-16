@@ -1,5 +1,6 @@
 // CHECKED 15/07/2024
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import { useLocation } from "react-router-dom"; // Correct import
 import HeaderLogo from "../HeaderLogo/HeaderLogo";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
 import BurgerButton from "../ButtonComponents/BurgerButton/BurgerButton";
@@ -12,6 +13,8 @@ function MainComponent() {
   const menuRef = useRef(null);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+  const location = useLocation();
+
 
   const handleSwipe = useCallback(() => {
     if (touchStartX.current - touchEndX.current > 5) {
@@ -51,6 +54,11 @@ function MainComponent() {
       document.removeEventListener("touchend", handleTouchEnd);
     };
   }, [isOpen, handleClickOutside, handleTouchStart, handleTouchEnd]);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
 
   const className = `header__nav ${isOpen ? "active" : ""}`;
 
