@@ -1,28 +1,16 @@
-import React, { Suspense, useEffect } from 'react';
-
-// Lazy load components
-const HomeTitle = React.lazy(() => import('./HomeTitle/HomeTitle'));
-const HomeSlider = React.lazy(() => import('./HomeSlider/HomeSlider'));
-const HomeCoaches = React.lazy(() => import('./HomeCoaches/HomeCoaches'));
-const HomePartners = React.lazy(() => import('./HomePartners/HomePartners'));
+import React from "react";
+import HomeTitle from "./HomeTitle/HomeTitle";
+import HomeSlider from "./HomeSlider/HomeSlider";
+import HomeCoaches from "./HomeCoaches/HomeCoaches";
+import HomePartners from "./HomePartners/HomePartners";
 
 function Home() {
-  useEffect(() => {
-    // Preload all components when Home component mounts
-    import('./HomeTitle/HomeTitle');
-    import('./HomeSlider/HomeSlider');
-    import('./HomeCoaches/HomeCoaches');
-    import('./HomePartners/HomePartners');
-  }, []);
-
   return (
     <main>
-      <Suspense fallback={<div>Loading content...</div>}>
-        <HomeTitle />
-        <HomeSlider />
-        <HomeCoaches />
-        <HomePartners />
-      </Suspense>
+      <HomeTitle />
+      <HomeSlider />
+      <HomeCoaches />
+      <HomePartners />
     </main>
   );
 }
