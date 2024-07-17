@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 
 // Lazy load components
 const HomeTitle = React.lazy(() => import('./HomeTitle/HomeTitle'));
